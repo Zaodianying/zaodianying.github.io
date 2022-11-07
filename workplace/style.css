@@ -101,9 +101,134 @@ h3 {
   color: rgb(255, 204, 93);
 }
 
+h4 {
+  color: rgb(255, 0, 0);
+  text-align: center;
+  font-size: 22px;
+  font-family: "Roboto Slab", serif;
+}
+
+
 footer {
   font-weight: 200;
   font-size: 16px;
   text-align: center;
   margin-bottom: 20px;
+}
+
+.image-gallery {
+  font-family: 'Courier Prime', monospace;
+  color:cornflowerblue;
+  font-size: 1.4em;
+}
+
+.listing {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: .9em;
+  background-color: #dddddd;
+  width:fit-content;
+  padding: 20px;
+  border-radius: 25px; 
+}
+
+/* ADDING flexbox to content sections - class 07 and 08 */
+
+
+.graphics-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  color: rgb(62, 62, 62);
+  text-align: center;
+  font-size: 12px;
+  font-family: "Roboto Slab", serif;
+}
+
+/* ADDING overlays */
+/* bug during class was not here in CSS code blocks but was due to missing class in HTML */
+
+/* ADDING main overlay - how it will look before hover */
+/* note opacity setting of 0 to be invisible */
+
+
+.portfolio-overlay {
+  display: block;
+  /* starting opacity 0 so invisible UNTIL HOVER */
+  opacity: 0;
+  background-color: aqua;
+  /* position is important here and on what it overlays */
+  position: absolute;
+  height: 30%;
+  width: 80%;
+  padding: 10px;
+  bottom: 10%;
+  left: 10%;
+}
+
+/* code for what happens when image is hovered */
+
+.portfolio-hover {
+  position: relative;
+}
+
+.portfolio-hover:hover .portfolio-overlay {
+  opacity: 0.7;
+}
+
+/* code for sytling the text that is inside the hover box */
+
+.overlay-text {
+  color: rgb(84, 84, 4);
+  font-size: 1.1em;
+  margin: 0;
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  text-align: center;
+  bottom: 20%;
+}
+
+
+/* SECTION BEGINS HERE of code not covered in class */
+
+/* ADDED addt'l classes in HTML to go with these styles below */
+/* ADDED addt'l flexbox to these sections here */
+/* each image-text pair is a row and stays together */
+
+.documentation-row-01 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start space-around;
+}
+
+.documentation-row-02 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: start space-around;
+}
+
+.descriptor p {
+  padding-top: 40px;
+  padding-left: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-style: bold;
+  color:black;
+  font-style:italic;
+}
+
+.story {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* SECTION ENDS */
+
+/* styling based on a unique ID */
+
+#summary {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+  color: magenta;
 }
