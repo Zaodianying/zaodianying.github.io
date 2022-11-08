@@ -196,49 +196,15 @@ footer {
   bottom: 20%;
 }
 
-
-/* SECTION BEGINS HERE of code not covered in class */
-
-/* ADDED addt'l classes in HTML to go with these styles below */
-/* ADDED addt'l flexbox to these sections here */
-/* each image-text pair is a row and stays together */
-
-.documentation-row-01 {
+.ear-row-01{
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: start space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: start space-around;
 }
-
-.documentation-row-02 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: start space-around;
-}
-
-.descriptor p {
+.descriptor {
   padding-top: 40px;
   padding-left: 40px;
-  font-family: 'Roboto', sans-serif;
-  font-style: bold;
-  color:black;
-  font-style:italic;
+  color:rgb(13, 12, 12);
+  font-weight: 300;
 }
-
-.story {
-  font-family: 'Roboto', sans-serif;
-}
-
-/* SECTION ENDS */
-
-/* styling based on a unique ID */
-
-#summary {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 0.9em;
-  color: magenta;
-}
-
-
-
