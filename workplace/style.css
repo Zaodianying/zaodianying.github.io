@@ -91,9 +91,8 @@ h2 {
 .b2 {
   padding-top: 60px;
   font-weight: 300;
-  margin-left: 48px;
-  margin-right: 48px;
-  text-align: center;
+  width: fit-content;
+  margin: auto;
   font-size: 18px;
 }
 
@@ -108,7 +107,9 @@ h3 {
 
 #boarder{
   border-radius: 25px;
-  border: 2px solid #73AD21;
+  background-color: rgb(58, 93, 46);
+  margin-left: 200px;
+  margin-right: 200px;
 }
 
 #color-text{
@@ -125,73 +126,35 @@ h4 {
 
 h5 {
   font-size: 18px;
-  font-weight: 300;
+  font-weight: 500;
 }
+
 
 footer {
   font-weight: 200;
   font-size: 16px;
+  width: 100%;
   text-align: center;
   margin-bottom: 20px;
 }
 
-.ear {
+.head {
   font-weight: 200;
   font-size: 22px;
 }
 
 
-.image-gallery {
-  font-family: 'Courier Prime', monospace;
-  color:cornflowerblue;
-  font-size: 1.4em;
-}
-
-.listing {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: .9em;
-  background-color: #dddddd;
-  width:fit-content;
-  padding: 20px;
-  border-radius: 25px; 
-}
-
-/* ADDING flexbox to content sections - class 07 and 08 */
-
-
-.graphics-section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; 
-  justify-content: space-evenly;
-  color: rgb(62, 62, 62);
-  text-align: center;
-  font-size: 12px;
-  font-family: "Roboto Slab", serif;
-}
-
-/* ADDING overlays */
-/* bug during class was not here in CSS code blocks but was due to missing class in HTML */
-
-/* ADDING main overlay - how it will look before hover */
-/* note opacity setting of 0 to be invisible */
-
-
 .portfolio-overlay {
   display: block;
-  /* starting opacity 0 so invisible UNTIL HOVER */
   opacity: 0;
-  background-color: aqua;
-  /* position is important here and on what it overlays */
+  background-color: rgb(255, 227, 71);
   position: absolute;
-  height: 30%;
+  height: 10%;
   width: 80%;
   padding: 10px;
   bottom: 10%;
   left: 10%;
 }
-
-/* code for what happens when image is hovered */
 
 .portfolio-hover {
   position: relative;
@@ -201,27 +164,26 @@ footer {
   opacity: 0.7;
 }
 
-/* code for sytling the text that is inside the hover box */
 
 .overlay-text {
-  color: rgb(84, 84, 4);
-  font-size: 1.1em;
+  color: rgb(25, 25, 24);
+  font-size: 16px;
   margin: 0;
   position: absolute;
   left: 10%;
   right: 10%;
   text-align: center;
-  bottom: 20%;
+  bottom: 30%;
 }
 
-.ear-row-01{
+.head-row-01{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   margin-left: 100px;
   margin-right: 100px;
 }
-.ear-row-02{
+.head-row-02{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -234,4 +196,42 @@ footer {
   color:rgb(13, 12, 12);
   font-weight: 300;
   font-size: 16px;
+}
+
+
+td, th {
+  padding: 6px;
+}
+
+table {
+  background-image:url(/images/10.png);
+  background-size:cover;
+    padding: 10px;   
+    margin:20px;
+    border-radius: 25px;
+}
+
+
+tr:hover {background-color: rgb(255, 249, 219);}
+
+
+.graphics-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-weight: 200;
+}
+
+
+.graphics-section2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; 
+  justify-content: space-evenly;
+  font-size: 16px;
+  font-weight: 200;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
