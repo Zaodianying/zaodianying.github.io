@@ -87,7 +87,7 @@ h3 {
   color: rgb(62, 62, 62);
   text-align: center;
   font-size: 22px;
-  padding: 20px;
+  padding-top: 70px;
   width: fit-content;
   margin: auto;
 }
@@ -102,10 +102,11 @@ h3 {
 }
 
 h4 {
-  color: rgb(255, 0, 0);
+  color: rgb(253, 223, 133);
   text-align: center;
-  font-size: 22px;
-  font-family: "Roboto Slab", serif;
+  font-size: 18px;
+  font-weight: 200;
+  padding: 20px;
 }
 
 
@@ -232,3 +233,6 @@ footer {
   font-size: 0.9em;
   color: magenta;
 }
+
+
+
