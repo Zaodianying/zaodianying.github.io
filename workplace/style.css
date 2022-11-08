@@ -204,7 +204,7 @@ td, th {
 }
 
 table {
-  background-image:url(/images/10.png);
+  background-image:url(images/10.png);
   background-size:cover;
     padding: 10px;   
     margin:20px;
