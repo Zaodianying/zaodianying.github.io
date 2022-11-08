@@ -117,6 +117,12 @@ footer {
   margin-bottom: 20px;
 }
 
+.headpage {
+  font-weight: 200;
+  font-size: 22px;
+}
+
+
 .image-gallery {
   font-family: 'Courier Prime', monospace;
   color:cornflowerblue;
